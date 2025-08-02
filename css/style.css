@@ -514,6 +514,13 @@
   transition: 0.5s;
 }
 
+@media (min-width: 768px) {
+  .blog .blog-item .blog-img img {
+    min-height: 245px;
+    object-fit: cover;
+  }
+}
+
 .blog .blog-item:hover .blog-img img {
   transform: scale(1.2);
 }
