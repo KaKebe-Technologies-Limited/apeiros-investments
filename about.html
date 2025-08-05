@@ -37,6 +37,34 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Add this CSS to your <head> or existing stylesheet -->
+    <style>
+      .toggle-link {
+        color: var(--bs-primary);
+        text-decoration: underline;
+        cursor: pointer;
+        display: block;
+        margin-top: 10px;
+      }
+      .toggle-link:hover {
+        color: var(--bs-dark);
+      }
+      .team-item {
+        display: flex;
+        flex-direction: column;
+        height: 100%; /* Ensure cards stretch to match tallest */
+      }
+      .team-text {
+        min-height: 60px; /* Fixed height for consistent text area */
+        flex-grow: 1; /* Allows text area to fill space */
+      }
+      .team-item .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Pushes toggle link to bottom */
+      }
+    </style>
   </head>
 
   <body>
@@ -190,195 +218,148 @@
     </div>
     <!-- Navbar & Hero End -->
 
-    <!-- Abvout Start -->
-    <div class="container-fluid about py-5">
-      <div class="container py-5">
-        <div class="row g-5 align-items-center">
-          <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
-            <div>
-              <h4 class="text-primary">About Us</h4>
-              <h1 class="display-5 mb-4">
-                Transforming Communities Through Sustainable Solutions
-              </h1>
-              <p class="mb-4">
-                At Apeiros Investments, we are dedicated to transforming
-                communities by empowering farmers and promoting sustainable
-                solutions in agriculture, construction, and essential supplies.
-              </p>
-              <div class="row g-4">
-                <div class="col-md-6 col-lg-6 col-xl-6">
-                  <div class="d-flex">
-                    <div>
-                      <i class="fas fa-lightbulb fa-3x text-primary"></i>
-                    </div>
-                    <div class="ms-4">
-                      <h4>Sustainable Agriculture</h4>
-                      <p>
-                        Apeiros Investments empowers local farmers by providing
-                        training, resources, and innovative farming techniques
-                        to promote sustainable agricultural practices. By
-                        focusing on long-term environmental health and
-                        productivity, we help farmers boost yields and improve
-                        their livelihoods.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-6">
-                  <div class="d-flex">
-                    <div>
-                      <i
-                        class="bi bi-bookmark-heart-fill fa-3x text-primary"
-                      ></i>
-                    </div>
-                    <div class="ms-4">
-                      <h4>Construction and Supplies</h4>
-                      <p>
-                        We offer reliable construction services and essential
-                        supplies, helping rebuild and strengthen infrastructure
-                        in communities. Our projects aim to create durable,
-                        efficient structures that support growth and development
-                        in rural areas.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <a
-                    href="#"
-                    class="btn btn-primary rounded-pill py-3 px-5 flex-shrink-0"
-                    >Discover Now</a
-                  >
-                </div>
-                <div class="col-sm-6">
-                  <div class="d-flex">
-                    <i class="fas fa-phone-alt fa-2x text-primary me-4"></i>
-                    <div>
-                      <h4>Call Us</h4>
-                      <p class="mb-0 fs-5" style="letter-spacing: 1px">
-                        (+256) 3456 7890
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <!-- About Us Section --><!-- 
+    <section class="about py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="display-5 font-weight-bold mb-4">About Apeiros Investments</h2>
+            <p class="lead">Rooted in the resilient spirit of Northern Uganda, Apeiros Investments began as Ogur United Mothers (OGUM), a community-driven effort to rebuild livelihoods after conflict. Today, we’re a dynamic enterprise championing sustainable agriculture, farmer empowerment, construction, and supplies.</p>
+            <p class="lead">From humble beginnings to transformative impact, we’re dedicated to fostering growth and resilience across Uganda.</p>
           </div>
-          <div class="col-xl-5 wow fadeInRight" data-wow-delay="0.2s">
-            <div class="bg-primary rounded position-relative overflow-hidden">
-              <img
-                src="img/home-img1.PNG"
-                class="img-fluid rounded w-100"
-                alt=""
-              />
-              <div class="rounded-bottom">
-                <img
-                  src="img/home-img2.PNG"
-                  class="img-fluid rounded-bottom w-100"
-                  alt=""
-                />
-              </div>
-            </div>
+          <div class="col-lg-6">
+            <img src="img/about-1.jpg" class="img-fluid rounded" alt="About Apeiros Investments">
           </div>
         </div>
       </div>
-    </div>
-    <!-- About End -->
+    </section> -->
 
-    <!-- Features Start -->
-    <div class="container-fluid feature pb-5">
-      <div class="container pb-5">
-        <div
-          class="text-center mx-auto pb-5 wow fadeInUp"
-          data-wow-delay="0.2s"
-          style="max-width: 800px"
-        >
-          <h4 class="text-primary">Our Unique Features</h4>
-          <h1 class="display-5 mb-4">Driving Sustainable Growth</h1>
-          <p class="mb-0">
-            Our key features highlight how we support farmers, build essential
-            infrastructure, and foster community-driven development. Explore how
-            we’re making a lasting impact in Northern Uganda through tailored,
-            sustainable solutions.
-          </p>
+    <!-- Company History Section -->
+    <section class="history py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 font-weight-bold">Our Journey</h2>
+          <p class="lead">From humble beginnings to transformative impact in Northern Uganda.</p>
         </div>
-        <div class="row g-4">
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.2s"
-          >
-            <div class="feature-item p-4">
-              <div class="feature-icon p-4 mb-4">
-                <i class="fas fa-chart-line fa-4x text-primary"></i>
-              </div>
-              <h4>Sustainable Agricultural Practicest</h4>
-              <p class="mb-4">
-                We promote eco-friendly farming techniques that protect the
-                environment while boosting productivity.
-              </p>
-              <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                >Learn More</a
-              >
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card bg-light shadow-sm p-4">
+              <h4 class="card-title">Rooted in Resilience</h4>
+              <p class="card-text">Born from the resilient spirit of Northern Uganda, Apeiros Investments started as Ogur United Mothers (OGUM), a community-driven initiative formed in the aftermath of forced displacement. Inspired by the need to rebuild livelihoods post-conflict, OGUM empowered local farmers to pool resources, benefiting from National Agricultural Advisory Services (NAADS) to cultivate and market crops like upland rice and maize.</p>
+              <p class="card-text">Over time, members expanded into bulk trading and local poultry production, laying the foundation for Apeiros Investments Limited, formally established in 2021. Today, we are a dynamic enterprise focused on sustainable agriculture, farmer empowerment, construction, and supplies, committed to scaling operations and driving real change across Uganda.</p>
             </div>
           </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.4s"
-          >
-            <div class="feature-item p-4">
-              <div class="feature-icon p-4 mb-4">
-                <i class="fas fa-university fa-4x text-primary"></i>
-              </div>
-              <h4>Farmer Empowerment</h4>
-              <p class="mb-4">
-                Empoering farmers is at the heart beat of whatever we do by
-                providing access to quality inputs, tools, and knowlwdge.
-              </p>
-              <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                >Learn More</a
-              >
+          <div class="col-lg-6">
+            <img src="img/history.jpg" class="img-fluid rounded" alt="Apeiros Investments History">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section with Mission, Vision, and Core Values Cards -->
+    <section class="about py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 font-weight-bold">What Drives Us</h2>
+          <p class="lead">Rooted in Northern Uganda’s resilient spirit, we empower communities through sustainable agriculture, construction, and development.</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card bg-light shadow-sm text-center p-4">
+              <i class="fas fa-bullseye fa-3x mb-3 text-primary"></i>
+              <h4 class="card-title">Our Mission</h4>
+              <p class="card-text">To empower communities by driving economic growth through transformative, sustainable practices and building resilient solutions that elevate livelihoods across Uganda.</p>
             </div>
           </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.6s"
-          >
-            <div class="feature-item p-4">
-              <div class="feature-icon p-4 mb-4">
-                <i class="fas fa-file-alt fa-4x text-primary"></i>
-              </div>
-              <h4>Market Access and Support</h4>
-              <p class="mb-4">
-                Farmers need access to markets to succeed, and we’re here to
-                help them reach their potential.
-              </p>
-              <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                >Learn More</a
-              >
+          <div class="col-md-4 mb-4">
+            <div class="card bg-light shadow-sm text-center p-4">
+              <i class="fas fa-eye fa-3x mb-3 text-primary"></i>
+              <h4 class="card-title">Our Vision</h4>
+              <p class="card-text">To be a catalyst for sustainable development and economic prosperity, fostering empowered, resilient communities throughout Uganda.</p>
             </div>
           </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.8s"
-          >
-            <div class="feature-item p-4">
-              <div class="feature-icon p-4 mb-4">
-                <i class="fas fa-hand-holding-usd fa-4x text-primary"></i>
-              </div>
-              <h4>Post-Conflict Solutions</h4>
-              <p class="mb-4">
-                With a focus on Northern Uganda, we specialize in working with
-                communities that have been affected by conflict.
-              </p>
-              <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                >Learn More</a
-              >
+          <div class="col-md-4 mb-4">
+            <div class="card bg-light shadow-sm text-center p-4">
+              <i class="fas fa-handshake fa-3x mb-3 text-primary"></i>
+              <h4 class="card-title">Our Core Values</h4>
+              <p class="card-text">Sustainability, community empowerment, and innovation guide our work, ensuring lasting impact and growth for all stakeholders.</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Features End -->
+    </section>
+
+    <!-- Senior Leadership Team Section -->
+    <section class="team py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 font-weight-bold">Meet Our Senior Leadership</h2>
+          <p class="lead">Our dedicated team drives Apeiros’ vision of sustainable growth and community empowerment.</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="team-item bg-light shadow-sm text-center p-4 rounded">
+              <div class="team-img">
+                <img src="img/profile-pic-woman-2.jpg" class="img-fluid rounded-circle" alt="Hellen Achan Odongo">
+              </div>
+              <div class="card-body">
+                <div class="team-title mt-3">
+                  <h4>Hellen Achan Odongo</h4>
+                  <p class="text-muted">Chief Business Officer & Company Secretary</p>
+                </div>
+                <p class="team-text">Hellen leads Apeiros with decades of experience in development and management.</p>
+                <div class="collapse mt-3" id="helenDetails">
+                  <p>With expertise in HR and policy development, she holds a Master’s in Public Administration and a Bachelor’s in Development Studies, driving sustainable growth.</p>
+                </div>
+                <a class="toggle-link" data-bs-toggle="collapse" href="#helenDetails" role="button" aria-expanded="false" aria-controls="helenDetails">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="team-item bg-light shadow-sm text-center p-4 rounded">
+              <div class="team-img">
+                <img src="img/team-1.jpg" class="img-fluid rounded-circle" alt="Martin Luther Opolo">
+              </div>
+              <div class="card-body">
+                <div class="team-title mt-3">
+                  <h4>Martin Luther Opolo</h4>
+                  <p class="text-muted">Operations Manager</p>
+                </div>
+                <p class="team-text">Martin oversees logistics with expertise in engineering and public administration.</p>
+                <div class="collapse mt-3" id="martinDetails">
+                  <p>His focus on efficiency and quality ensures seamless coordination, translating Apeiros’ commitment into tangible results.</p>
+                </div>
+                <a class="toggle-link" data-bs-toggle="collapse" href="#martinDetails" role="button" aria-expanded="false" aria-controls="martinDetails">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="team-item bg-light shadow-sm text-center p-4 rounded">
+              <div class="team-img">
+                <img src="img/profile-pic-man.jpg" class="img-fluid rounded-circle" alt="Daniel Omara">
+              </div>
+              <div class="card-body">
+                <div class="team-title mt-3">
+                  <h4>Daniel Omara</h4>
+                  <p class="text-muted">Projects Manager</p>
+                </div>
+                <p class="team-text">Daniel, a civil engineer, delivers quality projects with cost-effective solutions.</p>
+                <div class="collapse mt-3" id="danielDetails">
+                  <p>His experience includes Mapeera House and Mestil Hotel, bringing technical leadership to Apeiros’ construction initiatives.</p>
+                </div>
+                <a class="toggle-link" data-bs-toggle="collapse" href="#danielDetails" role="button" aria-expanded="false" aria-controls="danielDetails">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Team Start -->
     <div class="container-fluid team pb-5">
@@ -390,7 +371,7 @@
         >
           <h4 class="text-primary">Our Team</h4>
           <h1 class="display-5 mb-4">Meet Our Advisers</h1>
-          <p class="mb-0">
+          <p class="lead mb-0">
             At Apeiros Investments, our team is made up of passionate
             professionals dedicated to driving community empowerment and
             sustainable development in Northern Uganda.
@@ -717,5 +698,19 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- JavaScript for toggling link text -->
+    <script>
+      document.querySelectorAll('.collapse').forEach(collapse => {
+        collapse.addEventListener('shown.bs.collapse', function () {
+          const toggleLink = document.querySelector(`a[href="#${this.id}"]`);
+          toggleLink.textContent = 'Read Less';
+        });
+        collapse.addEventListener('hidden.bs.collapse', function () {
+          const toggleLink = document.querySelector(`a[href="#${this.id}"]`);
+          toggleLink.textContent = 'Read More';
+        });
+      });
+    </script>
   </body>
 </html>

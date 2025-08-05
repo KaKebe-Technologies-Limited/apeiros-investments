@@ -437,6 +437,9 @@
 }
 
 .service .service-item .service-img img {
+  aspect-ratio: 3 / 2;
+  width: 100%;
+  height: auto;
   transition: 0.5s;
 }
 
@@ -692,11 +695,11 @@
 .team .team-item .team-title p {
   transition: 0.5s;
 }
-
+/* 
 .team .team-item:hover .team-title h4,
 .team .team-item:hover .team-title p {
   color: var(--bs-white);
-}
+} */
 
 .team .team-item .team-icon {
   display: flex;
@@ -937,6 +940,14 @@
   }
 }
 /*** Footer End ***/
+
+/*** Custom Start ***/
+.highlights .card img {
+  aspect-ratio: 3 / 2;
+  width: 100%;
+  height: auto;
+}
+/*** Custom End ***/
 
 /*** copyright Start ***/
 .copyright {
