@@ -50,6 +50,34 @@
       .toggle-link:hover {
         color: var(--bs-dark);
       }
+
+      .project-card {
+        background: var(--bs-light);
+        border-radius: 10px;
+        padding: 15px;
+        overflow: hidden;
+        transition: 0.5s;
+      }
+      .project-card img {
+        aspect-ratio: 3 / 2;
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+      .project-card h5 {
+        color: var(--bs-dark);
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+      .project-card p {
+        color: var(--bs-body);
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 0;
+      }
     </style>
   </head>
 
@@ -454,7 +482,7 @@
               <div class="p-4">
                 <h3>Construction</h3>
                 <p>Specializing in the design and implementation of buildings and structures, ensuring stability, durability, and client satisfaction.</p>
-                <a href="services.html#construction" class="btn btn-primary">Learn More</a>
+                <a href="service.html?section=construction" class="btn btn-primary">Learn More</a>
               </div>
             </div>
           </div>
@@ -466,7 +494,7 @@
               <div class="p-4">
                 <h3>Supplies</h3>
                 <p>Providing reliable trade and supply services, including agro-based produce, agricultural inputs, and essential goods.</p>
-                <a href="services.html#supplies" class="btn btn-primary">Learn More</a>
+                <a href="service.html?section=supplies" class="btn btn-primary">Learn More</a>
               </div>
             </div>
           </div>
@@ -478,7 +506,7 @@
               <div class="p-4">
                 <h3>Regenerative Forestry</h3>
                 <p>Restoring degraded land through sustainable forestry practices, benefiting local communities & ecosystems.</p>
-                <a href="services.html#forestry" class="btn btn-primary">Learn More</a>
+                <a href="service.html?section=forestry" class="btn btn-primary">Learn More</a>
               </div>
             </div>
           </div>
@@ -490,7 +518,7 @@
               <div class="p-4">
                 <h3>Goat Rearing</h3>
                 <p>Transforming goat farming with innovative breeding and husbandry practices, supporting local farmers and sustainability.</p>
-                <a href="services.html#goat-rearing" class="btn btn-primary">Learn More</a>
+                <a href="service.html?section=goat-rearing" class="btn btn-primary">Learn More</a>
               </div>
             </div>
           </div>
@@ -511,7 +539,7 @@
               <i class="fas fa-tractor fa-3x mb-3 text-primary"></i>
               <h4>Sustainable Agriculture</h4>
               <p>Empowering farmers with eco-friendly techniques to boost productivity and protect the environment.</p>
-              <a href="services.html#agriculture" class="btn btn-outline-primary">Learn More</a>
+              <!-- <a href="service.html?section=goat-rearing" class="btn btn-outline-primary">Learn More</a> -->
             </div>
           </div>
           <div class="col-md-4 mb-4">
@@ -519,7 +547,7 @@
               <i class="fas fa-hard-hat fa-3x mb-3 text-primary"></i>
               <h4>Construction Excellence</h4>
               <p>Delivering durable, cost-effective structures with a focus on client satisfaction and sustainability.</p>
-              <a href="services.html#construction" class="btn btn-outline-primary">Learn More</a>
+              <!-- <a href="service.html?section=construction" class="btn btn-outline-primary">Learn More</a> -->
             </div>
           </div>
           <div class="col-md-4 mb-4">
@@ -527,7 +555,7 @@
               <i class="fas fa-handshake fa-3x mb-3 text-primary"></i>
               <h4>Community Empowerment</h4>
               <p>Supporting local communities through training, resources, and market access for lasting impact.</p>
-              <a href="about.html#community" class="btn btn-outline-primary">Learn More</a>
+              <!-- <a href="about.html?section=supplies" class="btn btn-outline-primary">Learn More</a> -->
             </div>
           </div>
         </div>
@@ -598,32 +626,22 @@
           <h2 class="display-5 font-weight-bold">Ongoing Projects</h2>
           <p class="lead">Explore our current projects and their progress.</p>
         </div>
-        <div class="accordion" id="ongoingProjectsAccordion">
-          <div class="accordion-item bg-light mb-3">
-            <h2 class="accordion-header fs-3 fw-bold" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Residential Building in Wakiso District
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#ongoingProjectsAccordion">
-              <div class="accordion-body">
-                This ongoing project involves constructing a modern residential building in Wakiso District, designed to provide affordable and sustainable housing solutions for the local community.
+            <div class="row">
+              <div class="col-12 col-md-6 mb-4">
+                <div class="project-card">
+                  <!-- <img src="img/project3.jpg" class="img-fluid" alt="Residential Building in Wakiso"> -->
+                  <h5>Residential Building in Wakiso District</h5>
+                  <p>Currently under construction, this residential building aims to provide modern living spaces tailored to community needs.</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 mb-4">
+                <div class="project-card">
+                  <!-- <img src="img/project4.jpg" class="img-fluid" alt="Residential Apartments in Lira"> -->
+                  <h5>Residential Apartments in Lira City</h5>
+                  <p>This ongoing project will deliver affordable and sustainable housing options for residents in Lira City.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="accordion-item bg-light mb-3">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Residential Apartments in Lira City
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#ongoingProjectsAccordion">
-              <div class="accordion-body">
-                We are currently working on a new residential apartment complex in Lira City, aimed at offering comfortable living spaces with eco-friendly features and modern amenities.
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
